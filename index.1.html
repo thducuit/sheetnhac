@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Sheet music | MuseScore</title>
+    <meta name="description" content="Share, download and print free sheet music for piano, guitar, flute and more on the world&#039;s largest community of sheet music creators.">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+        
+    <link rel="stylesheet" href="css/index_desktop.css">
+</head>
+<body class="js-cookie-compliance js  desktop  ">
+    <div class="js-web-push"></div>
+    <div class="page  ">  
+        <div class="navbar js-navbar " role="banner">
+            <div class="navbar__container container">
+                <figure class="navbar__item navbar-logo">
+                    <a class="navbar-logo__link" href="#" title="Home" rel="home">MuseScore</a>
+                </figure>
+
+                <div class="navbar__item navbar__item_search-bar search-bar  js-search-from-wrapper">
+                    <form class="search-bar__form js-search-from" action="#" method="get" id="search-form" accept-charset="UTF-8"
+                    >
+                        <div class="search-bar__body">
+                            <div class="search-bar__input-wrapper">
+                                <label for="search-value" class="visually-hidden">Search</label>
+                                <input type="search" id="search-value" name="text"
+                                        size="15"
+                                        maxlength="128"
+                                        placeholder="Search for sheet music"
+                                        class="search-bar__input form-search js-search-input"
+                                        autocomplete="off"
+                                        autocorrect="off"
+                                        autocapitalize="off"
+                                        required
+                                        value=""
+                                />
+
+                                <div class="search-bar__clear js-search-input-clear hide">
+                                    <div class="search-bar__icon-close"></div>
+                                </div>
+                            </div>
+
+                            <div class="search-bar__type">
+                                <div class="dropdown js-dropdown-select">
+                                    <button id="searchType" class="search-bar__type-button" type="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <span class="search-bar__type-button-text js-dropdown-selected">All</span>
+                                        <span class="caret"></span>
+                                    </button>
+
+                                    <ul class="search-bar__type-menu dropdown-menu" aria-labelledby="searchType">
+                                        <li><a class="search-bar__type-item js-dropdown-select-item" 
+                                            data-value="">All</a></li>
+                                        <li><a class="search-bar__type-item js-dropdown-select-item"
+                                                data-value="/hub/piano/">Piano</a></li>                                                                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-bar__actions">
+                            <input type="submit" value="Search" class="search-bar__submit button js-form-submit form-submit"
+                            />
+                        </div>
+                        <div class="search-bar__autocomplete ugm-b-autocomplete">
+                            <ul class="js-autocomplete-list ugm-b-autocomplete--list hide"></ul>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- <div class="navbar__item navbar-menu">
+                    <ul class="navbar-menu__items">
+                        <li class="navbar-menu__item"><a href="#">Browse</a></li>
+                        <li class="navbar-menu__item"><a href="#">Community</a></li>
+                    </ul>       
+                </div> -->
+
+                <div class="navbar__item--filler"></div>
+
+                <div class="navbar__item navbar__item_right navbar-account">
+                    <div class="navbar-account__item">
+                        <a href="#" class="navbar-account__list-item upload">Upload</a>
+                        <a href="#" class="navbar-account__list-item login">Log In</a>
+                    </div>
+                </div>
+            </div>
+            <div class="js-header-banner"></div>
+        </div>
+
+        <div class="container content-wrapper">
+            <div class="messages-wrapper"></div>
+            <div id="block-appinvitemobile-3" class="block block-musescore block-musescore-app-invite-mobile">
+                <div class="app-link"></div>
+            </div>
+            <div class="row ">
+                <main role="main" class="main-col col-sm-12">
+                        <a id="main-content" tabindex="-1"></a>
+                        <div class="row two-col-wrapper page-sheetmusic">
+                            <div class="dropdown sheetmusic-filter hidden-lg hidden-md hidden-sm">
+                                <button type="button" id="sheetmusic-sort" class="btn actions-toggle dropdown-toggle btn-default" data-toggle="dropdown" data-id="edit-private" title="Sort" aria-haspopup="true" aria-expanded="false">
+                                    <span class="filter-option pull-left">Sort</span>&nbsp;<span class="bs-caret">
+                                    <span class="caret"></span></span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="sheetmusic-sort">
+                                    <h2>Sort by</h2>
+                                    <div class="item-list">
+                                        <ul>
+                                            <li><a href="sheetmusicc9ea.html?sort=date_uploaded" class="sort-link ">Upload date</a></li>
+                                            <li><a href="sheetmusic9f6d.html?sort=comment_count" class="sort-link ">Comment count</a></li>
+                                            <li><a href="sheetmusic8d57.html?sort=view_count" class="sort-link is-active">View count</a></li>
+                                        </ul>                    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown sheetmusic-filter hidden-lg hidden-md hidden-sm">
+                                <button type="button" id="sheetmusic-filters" class="btn actions-toggle dropdown-toggle btn-default" data-toggle="dropdown" data-id="edit-private" title="Filter" aria-haspopup="true" aria-expanded="false">
+                                    <span class="filter-option pull-left">Filter</span>&nbsp;
+                                    <span class="bs-caret">
+                                        <span class="caret"></span>
+                                    </span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="sheetmusic-filters">
+                                    <h2>Filter by instruments</h2>
+                                        <div class="item-list">
+                                            <ul>
+                                                <li class="facet-item">
+                                                    <a href="sheetmusicd920.html?sort=view_count&amp;instruments=0" rel="nofollow">
+                                                        <span class="facet-item__value">Piano</span>
+                                                    </a>
+                                                </li>
+                                        </div>
+
+                                    <h2>Number of instruments</h2>
+                                        <div class="item-list">
+                                            <ul>
+                                                <li class="facet-item">
+                                                    <a href="sheetmusic8d57.html?sort=view_count" rel="nofollow">
+                                                        <span class="facet-item__value">0</span>
+                                                    </a>
+                                                </li>
+                                            </ul>                
+                                        </div>
+                                    <h2>License</h2>
+                                        <div class="item-list">
+                                            <ul>
+                                                <li><a href="sheetmusicd233.html?sort=view_count&amp;license=to_modify_commercially" class="cc-link ">To modify commercially</a></li>
+                                                <li><a href="sheetmusice76a.html?sort=view_count&amp;license=to_use_commercially" class="cc-link ">To use commercially</a></li>
+                                                <li><a href="sheetmusice749.html?sort=view_count&amp;license=to_share" class="cc-link ">To share</a></li>
+                                                <li><a href="sheetmusic8d57.html?sort=view_count" class="cc-link is-active">For personal use</a></li>
+                                            </ul>                
+                                        </div>
+                                </div>
+                            </div>
+
+                            <aside role="complementary" class="aside-col aside-col__sheetmusic aside-col-first col-sm-3 hidden-xs">
+                                <div id="block-sortblock" class="block block-musescore block-musescore-search-sort-block">
+                                    <h2>Sort by</h2>
+                                    <div class="item-list">
+                                        <ul>
+                                            <li><a href="sheetmusicc9ea.html?sort=date_uploaded" class="sort-link ">Upload date</a></li>
+                                            <li><a href="sheetmusic9f6d.html?sort=comment_count" class="sort-link ">Comment count</a></li>
+                                            <li><a href="sheetmusic8d57.html?sort=view_count" class="sort-link is-active">View count</a></li>
+                                        </ul>       
+                                    </div>
+                                </div>
+                                
+                                <div id="block-instruments" class="block-facets--links block block-facets block-facet-blockinstruments">
+                                    <h2>Filter by instruments</h2>
+                                    <div class="item-list">
+                                        <ul>
+                                            <li class="facet-item">
+                                                <a href="sheetmusicd920.html?sort=view_count&amp;instruments=0" rel="nofollow">
+                                                    <span class="facet-item__value">Piano</span>
+                                                </a>
+                                            </li>   
+                                        </ul>                
+                                    </div>
+                                </div>
+                                    
+                                <div id="block-parts" class="block-facets--musescore-links block block-facets block-facet-blockparts">
+                                    <h2>Number of instruments</h2>
+                                    <div class="item-list">
+                                        <ul>
+                                            <li class="facet-item">
+                                                <a href="sheetmusic8d57.html?sort=view_count" rel="nofollow">
+                                                    <span class="facet-item__value">0</span>
+                                                </a>
+                                            </li>        
+                                        </ul>                
+                                    </div>
+                                </div>
+                                    
+                                <div id="block-artists" class="block-facets--links block block-facets">
+                                    <a href="sheetmusic/artists.html"><h2>Browse by Artist</h2></a>        
+                                </div>
+
+                                <div id="block-creativecommonsblock" class="block block-score block-score-search-cc-block hide-xs">
+                                    <h2>License</h2>
+                                    <div class="item-list">
+                                        <ul>
+                                            <li><a href="sheetmusicd233.html?sort=view_count&amp;license=to_modify_commercially" class="cc-link ">To modify commercially</a></li>
+                                            <li><a href="sheetmusice76a.html?sort=view_count&amp;license=to_use_commercially" class="cc-link ">To use commercially</a></li>
+                                            <li><a href="sheetmusice749.html?sort=view_count&amp;license=to_share" class="cc-link ">To share</a></li>
+                                            <li><a href="sheetmusic8d57.html?sort=view_count" class="cc-link is-active">For personal use</a></li>
+                                        </ul>
+                                    </div>
+                                </div>    
+                            </aside>
+
+                            <main role="main" class="main-col col-sm-9">
+                                <a id="main-content" tabindex="-1"></a>
+                                
+                                <div class="page-sheetmusic__hubs">
+                                    <div class="entity-list entity-list--horizontal entity-list--nowrap sheetmusic-hubs js-sheetmusic-hubs">
+                                        <div class="header-content entity-list__header">
+                                            <h2 class="header-content__title entity-list__title">Top Hubs</h2>
+                                        </div>
+
+                                        <section class="entity-list__items">
+                                            <div class="entity-list__item">
+                                                <div class="hub-box">
+                                                    <div class="hub-box__avatar">
+                                                        <div class="avatar-wrapper">
+                                                            <a class="avatar" href="hub/piano/index.html"
+                                                            style="background-image: url(static/public/img/musescore/hub_icons/icon-piano.svg)"></a>
+                                                        </div>
+                                                    </div>
+                                                    <h4 class="hub-box__title"><a href="hub/piano/index.html">Piano</a></h4>
+                                                </div>
+                                            </div>
+                                            <div class="entity-list__item-filler"></div>
+                                        </section>
+
+                                        <div class="sheetmusic-hubs__more js-sheetmusic-hubs-more" style="display: none;">
+                                            <div class="header-content entity-list__header">
+                                                <h2 class="header-content__title entity-list__title">All Hubs</h2>
+                                            </div>
+
+                                            <section class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="hub-list">
+                                                        <h3 class="hub-list__title">Instruments</h3>
+                                                        <div class="hub-list__cols">
+                                                            <div class="hub-list__col">
+                                                                <div class="hub-list__item">
+                                                                    <a href="hub/brass/index.html" class="hub-list__link">Brass</a>
+                                                                </div>
+                                                                <div class="hub-list__item">
+                                                                    <a href="hub/strings/index.html" class="hub-list__link">Strings</a>
+                                                                </div>
+                                                                <div class="hub-list__item">
+                                                                    <a href="hub/folk/index.html" class="hub-list__link">Folk</a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="hub-list__col">
+                                                                <div class="hub-list__item">
+                                                                    <a href="hub/keyboard/index.html" class="hub-list__link">Keyboard</a>
+                                                                </div>
+                                                                <div class="hub-list__item">
+                                                                    <a href="hub/electronics/index.html" class="hub-list__link">Electronics</a>
+                                                                </div>
+                                                                <div class="hub-list__item">
+                                                                    <a href="hub/voice/index.html" class="hub-list__link">Voice</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hub-list__col">
+                                                                <div class="hub-list__item">
+                                                                    <a href="hub/guitar/index.html" class="hub-list__link">Guitar</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>            
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                        <div class="entity-list__meta">
+                                            <a href="#" class="js-sheetmusic-hubs-toggle" data-more="Show all" data-less="Show less">Show all</a>
+                                        </div>
+                                    </div>            
+                                </div>
+                                    
+                                <div class="page-sheetmusic__scores">
+                                    <div class="page-sheetmusic__heading">
+                                        <h2 class="page-sheetmusic__heading-title">Sheet music</h2>
+                                    </div>
+                                    <div class="clearfix node--type-scores">
+                                        <article role="article" class="node node--type-score node--view-mode-grid col-ms-6 col-sm-3">
+                                            <div class="card">
+                                                <div class="image-wrapper">
+                                                    <a href="user/12461571/scores/3291706.html" hreflang="en">
+                                                        <div class="score-overlay" data-score-id="3291706"></div>
+                                                        <picture>
+                                                            <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                                            <source width="400" height="560" srcset="https://resizercdn.musescore.com/estatic-w400-h560-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 1x, https://resizercdn.musescore.com/estatic-w800-h1120-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 2x" media="screen and (min-width: 1500px)" type="image/jpeg">
+                                                            <source width="300" height="420" srcset="https://resizercdn.musescore.com/estatic-w300-h420-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 1x, https://resizercdn.musescore.com/estatic-w600-h840-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 2x" media="screen and (min-width: 1280px)" type="image/jpeg">
+                                                            <source width="220" height="308" srcset="https://resizercdn.musescore.com/estatic-w220-h308-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 1x, https://resizercdn.musescore.com/estatic-w440-h612-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 2x" media="screen and (min-width: 992px)" type="image/jpeg">
+                                                            <source width="180" height="252" srcset="https://resizercdn.musescore.com/estatic-w180-h252-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 1x, https://resizercdn.musescore.com/estatic-w360-h504-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 2x" media="screen and (min-width: 768px)" type="image/jpeg">
+                                                            <source width="270" height="378" srcset="https://resizercdn.musescore.com/estatic-w270-h378-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 1x, https://resizercdn.musescore.com/estatic-w540-h756-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 2x" media="screen and (min-width: 480px)" type="image/jpeg">
+                                                            <source width="310" height="434" srcset="https://resizercdn.musescore.com/estatic-w310-h434-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 1x, https://resizercdn.musescore.com/estatic-w620-h868-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 2x" media="screen and (min-width: 0px)" type="image/jpeg">
+                                                            <!--[if IE 9]></video><![endif]-->
+                                                            <img srcset="https://resizercdn.musescore.com/estatic-w310-h434-cfill-gn/3291706/3831261b10/score_0.png.jpeg?no-cache=1531731567 1x" alt="River Flows In You" width="310" height="434">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h2>
+                                                <a href="user/12461571/scores/3291706.html" rel="bookmark">
+                                                    River Flows In You    
+                                                </a>
+                                            </h2>
+
+                                            <div class="user">
+                                                <article class="user name">
+                                                    <a href="user/12461571.html">emmy langevin</a>
+                                                    
+                                                </article>
+                                            </div>
+
+                                            <div class="meta">
+                                                <span>1 part</span> •
+                                                <span>4 pages</span> •
+                                                <span>02:47</span> •
+                                                <span>a year ago</span> •
+                                                <span>803,739 views</span>
+                                            </div>
+
+                                            <div class="instruments">Piano</div>
+                                        </article>
+                                    </div>
+
+                                    <ul class="pager__items ">
+                                        <li class="pager__item is-active"><a href="index2679.html?page=1" data-page="0">1</a></li>
+                                        <li class="pager__item"><a href="index4658.html?page=2" rel="next" data-page="1">2</a></li>
+                                        <li class="pager__item"><a href="index9ba9.html?page=3" data-page="2">3</a></li>
+                                        <li class="pager__item"><a href="index1448.html?page=10" data-page="9">10</a></li>
+                                        <li class="pager__item next"><a href="index4658.html?page=2" rel="next" data-page="1">Next ›</a></li>
+                                        <li class="pager__item last"><a href="indexf84d.html?page=100" data-page="99">Last »</a></li>
+                                    </ul>                    
+                                </div>
+                            </main>
+                        </div>
+                </main>
+            </div>
+        </div>
+            
+        <div class="messages-wrapper js-info-message hidden">
+            <div class="messages js-info-text "></div>
+        </div>
+        <footer role="contentinfo">
+            <div class="container">
+                <div class="row">
+                    <div id="block-appinvitefootermobile-2" class="block block-musescore block-musescore-app-invite-footer-mobile">
+                        <div class="app-link"></div>
+                        <p>Enjoy the full MuseScore experience <br/>with our app</p>
+                        <a class="app-link-ios" href="#">
+                            <img src="https://d1jdgm35warl9f.cloudfront.net/images/apple-app-store.svg" width="135"
+                                        height="40" alt="Apple App Store"/></a>
+                        <a class="app-link-android" href="">
+                            <img src="https://d1jdgm35warl9f.cloudfront.net/images/Get_it_on_Google_play.svg" width="135"
+                                        height="40" alt="Google Play Store"/></a>
+                    </div>
+                </div>
+                <div id="block-footermenu" class="block block-musescore block-musescore-footer-menu">
+                    <div class="col-xs-6 col-sm-2 item-list">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 item-list">
+                        <h3>Community</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 item-list">
+                        <h3>Software</h3>
+                        <ul>
+                            <li><a href="#" target="_blank">Forum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 item-list">
+                        <h3>Apps</h3>
+                        <ul>
+                            <li><a href="#">iPhone/iPad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 item-list">
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="icon-tumblr-squared"></i> Blog</a></li>
+                            <li><a href="#"><i class="icon-newspaper"></i> Newsletter</a></li>     
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 item-list">
+                        <ul>
+                            <li>&copy; 2018  </li><li><a href="legal/privacy.html">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index_desktop.js"></script>         
+</body>
+
+</html>

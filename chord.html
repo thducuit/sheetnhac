@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sheet music | MuseScore</title>
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="author" content="MuseScore" />
+    <link rel="stylesheet" href="css/index_desktop.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body class="desktop bundle-view bundle-score">   
+<div class="page page-score">
+    <div class="navbar" role="banner">
+            <div class="navbar__container container">
+                <figure class="navbar__item navbar-logo">
+                    <a class="navbar-logo__link" href="#" title="Home" rel="home">MuseScore</a>
+                </figure>
+
+                <div class="navbar__item navbar__item_search-bar search-bar">
+                    <form class="search-bar__form" action="#" method="get" id="search-form" accept-charset="UTF-8"
+                    >
+                        <div class="search-bar__body">
+                            <div class="search-bar__input-wrapper">
+                                <label for="search-value" class="visually-hidden">Search</label>
+                                <input type="search" id="search-value" name="text"
+                                        size="15"
+                                        maxlength="128"
+                                        placeholder="Search for sheet music"
+                                        class="search-bar__input form-search"
+                                        autocomplete="off"
+                                        autocorrect="off"
+                                        autocapitalize="off"
+                                        required
+                                        value=""
+                                />
+                            </div>
+
+                            <div class="search-bar__type">
+                                <div class="dropdown">
+                                    <button id="searchType" class="search-bar__type-button" type="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <span class="search-bar__type-button-text">All</span>
+                                        <span class="caret"></span>
+                                    </button>
+
+                                    <ul class="search-bar__type-menu dropdown-menu" aria-labelledby="searchType">
+                                        <li><a class="search-bar__type-item" 
+                                            data-value="">All</a></li>
+                                        <li><a class="search-bar__type-item"
+                                                data-value="/hub/piano/">Piano</a></li>                                                                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-bar__actions">
+                            <input type="submit" value="Search" class="search-bar__submit button form-submit"
+                            />
+                        </div>
+                        <div class="search-bar__autocomplete ugm-b-autocomplete">
+                            <ul class="js-autocomplete-list ugm-b-autocomplete--list hide"></ul>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="navbar__item navbar__item_right navbar-account">
+                    <div class="navbar-account__item">
+                        <a href="#" class="navbar-account__list-item upload">Upload</a>
+                        <a href="#" class="navbar-account__list-item login">Log In</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <main role="main">
+                <a id="main-content" tabindex="-1"></a>                
+                <article role="article" class="node node--type-score node--view-mode-full">
+                    <div class="node__content">
+                        <div class="score-left">
+                            <div id="jmuse-container" class="ms-player" style="position: relative; white-space: normal;">
+                                <div class="controls">
+                                    <!-- <div class="controlsInner">
+                                        <div class="item rewind">
+                                            <button disabled class="mdl-button--icon mdl-button"
+                                                    title="Rewind"><i class="material-icons icon-skip_previous"></i></button>
+                                        </div>
+                                        <div class="item playerToggle">
+                                            <button disabled class="mdl-button--icon mdl-button"
+                                                    title="Play (Space)"><i class="material-icons icon-play_arrow"></i></button>
+                                        </div>
+                                        <div class="seek">
+                                            <div class="bar noUi-target noUi-ltr noUi-horizontal noUi-connect">
+                                                <div class="noUi-base">
+                                                    <div class="noUi-origin noUi-background" style="left: 0%;">
+                                                        <div class="noUi-handle noUi-handle-lower">
+                                                            <span class="noUi-tooltip" style="display: none;">
+                                                                <div>Page 1 / 1</div>
+                                                                <div>Measure 1 / 9</div>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="time">00:00</div>
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="bufferIndicator"></div> -->
+                                </div>
+                                
+                                <div class="btn-group">
+                                    <span class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" onclick="changeStyle(document.getElementById('lyric'), 'b');" data-original-title="" title="">b</span>
+                                    <span class="btn btn-default btn-sm disabled" data-toggle="tooltip" data-placement="top" data-original-title="" title=""><span class="chord">[Am]</span></span>
+                                    <span data-toggle="tooltip" data-placement="top" class="btn btn-default btn-sm" onclick="changeStyle(document.getElementById('lyric'), '#');" data-original-title="" title="">#</span>
+                                </div>
+
+                                <div id="lyric">
+                                    1. Tôi về qua lối [Am] ấy ngôi trường làng còn [F] đây người xưa nay đâu [C] rồi [Am]<br>
+                                    Xác phượng rụng tả [Dm] tơi ve sầu mùa hạ [E7] tới tình nói sao nên [Am] lời<br>
+                                    Chuyện tình thời thơ [G] ấu bao kỷ niệm yêu [F] dấu<br>
+                                    Ép trong trang [Am] vở một [A7] nhánh lá thuộc [Dm] bài<br>
+                                    Mối tình ban [G] đầu xin ghi khắc bền [E7] lâu.<br>
+                                    <br>
+                                    2. Con đường nào chung [Am] bóng nay bạc màu thời [F] gian giờ xa xôi đôi [C] đường [Am]<br>
+                                    Bút mực buồn ngẩn [Dm] ngơ ai còn thương còn [E7] nhớ tà áo vương sân [Am] trường<br>
+                                    Rồi một chiều thu [G] ấy nét mực nhòa trang [F] giấy<br>
+                                    Cớ sao em [Am] nỡ vội [A7] đánh mất tình [Dm] đầu<br>
+                                    Giờ đây hai [E7] lối thương nhớ gửi về [Am] đâu.<br>
+                                    <br>
+                                    ĐK:<br>
+                                    [G] Thôi thôi nay đã xa [C] rồi<br>
+                                    Em vui bước bên [Am] người để lại tôi với đơn [C] côi<br>
+                                    [E7] Tôi không trách em bội [G] tình <br>
+                                    Nhưng tiếc cho phận [Am] mình không giữ được tình [E7] em<br>
+                                    <br>
+                                    Từng trang lưu [Am] bút gom dấu yêu vẫn còn [Dm] đây<br>
+                                    Người thương còn [F] nhớ hay đã quên cuộc tình [E7] say<br>
+                                    Riêng tôi chốn [Am] này vẫn thương nhớ [Dm] hoài<br>
+                                    Mối tình xưa [E7] ấy bao kỷ niệm thời học [Am] sinh. <br><br>
+                                </div>
+
+                            </div>
+                        </div>            
+                        <div class="score-right">
+                            <div class="score-split"></div>    
+                            <h1>River Flows In You</h1>
+                            <article class="user compact">
+                                <div class="avatar-wrapper">
+                                    <a class="avatar" title="emmy langevin" href="#" style="background-image: url(../../../static/musescore/userdata/avatar/default23e6.jpg?cache=0)"></a>
+                                </div>
+                                <a href="#">emmy langevin</a>
+                            </article>
+                            <div class="follow-wrapper"></div>
+                            <div class="importance">
+                                    <i class="icon icon-eye" title="Views"></i>803,742<span>views</span>
+                                
+                                <span class="pipe">|</span>
+                                <a href="#" class="use-ajax" data-remote="/score/favorite/view" data-toggle="modal" data-target="#modal" >
+                                    <i class="icon icon-heart" title="Favorites"></i>5,172 <span>favorites</span>
+                                </a><span class="pipe">|</span>
+
+                                <a href="#comments"><i class="icon icon-comment" title="Comments"></i>219 <span>comments</span></a>
+                            </div>
+
+                            <div class="buttons-wrapper horizontal">
+                                <div class="button-wrapper">
+                                    <button type="button" class="button" data-title="Download this score" data-toggle="modal" data-target="#download-modal">
+                                        <i class="icon-download"></i>
+                                        Download
+                                    </button>
+                                </div>
+                
+                                <div class="button-wrapper">
+                                    <a href="#" class="button secondary" data-title="Share this score" data-toggle="modal" data-target="#share-modal">
+                                        <i class="icon-share"></i>
+                                        Share
+                                    </a>
+                                </div>
+                                <div class="button-wrapper">
+                                    <a href="#" title="" class="flag flag-favorites button secondary action-flag"
+                                            data-push="favorite"
+                                            data-push-title="Do you want to receive notifications about updates of this score on your device?"
+                                            data-push-text="You'll receive notifications when the score has been updated and information about other important updates that you’ve subscribed for. You can enable or disable Notifications at any time from the Settings page."
+                                    >
+                                    <i class="icon-heart"></i><span class="js-score-btn-favorite-text">Favorite</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr/>
+                            <div class="read-more">
+                                <h2 class="read-more-title">Uploaded on Jan 24, 2017</h2>
+                                <div class="description ">
+                                    <div class="read-more-inner">
+                                        <div class="more-info">
+                                            <p class="tags">
+                                                <a href="#">Yiruma</a>
+                                            </p>
+
+                                            <table data-striping="1">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Pages</td>
+                                                        <td>4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Duration</td>
+                                                        <td>02:47</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Measures</td>
+                                                        <td>45</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Key signature</td>
+                                                        <td>3 sharps</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Parts</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Part names</td>
+                                                        <td>Piano</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Privacy</td>
+                                                        <td><i class="icon-public"></i> Everyone can see this score</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>License</td>
+                                                        <td><i class="icon-copyright"></i> None (All rights reserved)</td>
+                                                    </tr>
+                                                                        </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="read-more-toggle">Show more</a>
+                                <a href="#" class="read-less-toggle">Show less</a>
+                            </div>           
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div id="block-appinvitefootermobile-2" class="block block-musescore block-musescore-app-invite-footer-mobile">
+                    <div class="app-link"></div>
+                    <p>Enjoy the full MuseScore experience <br/>with our app</p>
+                    <a class="app-link-ios" href="#">
+                        <img src="https://d1jdgm35warl9f.cloudfront.net/images/apple-app-store.svg" width="135"
+                                    height="40" alt="Apple App Store"/></a>
+                    <a class="app-link-android" href="">
+                        <img src="https://d1jdgm35warl9f.cloudfront.net/images/Get_it_on_Google_play.svg" width="135"
+                                    height="40" alt="Google Play Store"/></a>
+                </div>
+            </div>
+            <div id="block-footermenu" class="block block-musescore block-musescore-footer-menu">
+                <div class="col-xs-6 col-sm-2 item-list">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 item-list">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 item-list">
+                    <h3>Software</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 item-list">
+                    <h3>Apps</h3>
+                    <ul>
+                        <li><a href="#">iPhone/iPad</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 item-list">
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="icon-tumblr-squared"></i> Blog</a></li>
+                        <li><a href="#"><i class="icon-newspaper"></i> Newsletter</a></li>     
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-2 item-list">
+                    <ul>
+                        <li>&copy; 2018  </li><li><a href="legal/privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="js/tord.js"></script>
+</body>
+</html>

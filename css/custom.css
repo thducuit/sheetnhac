@@ -1,0 +1,68 @@
+.chord {
+    color: #df495b
+}
+
+pre {
+    font-size: 15px;
+    font-family: sans-serif
+}
+
+#lyric {
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0; 
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; 
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn-group>.btn:first-child {
+    margin-left: 0;
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px; 
+    margin-left: 20px; 
+}
+
+.btn-group>.btn {
+    position: relative;
+    float: left;
+}
+
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0;
+}
+
+.btn-group .btn+.btn{
+    margin-left: -1px;
+}
